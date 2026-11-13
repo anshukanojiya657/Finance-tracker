@@ -1,0 +1,164 @@
+.tx-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  margin: 16px 0;
+}
+
+.tx-form h4 {
+  margin-bottom: 12px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.tx-form input,
+.tx-form select,
+.filters select {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 100%;
+  background: #fff;
+}
+
+.form-actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 9px 18px;
+  border: 1px solid #d1d5db;
+  background: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn.primary {
+  background: #4f46e5;
+  color: #fff;
+  border-color: #4f46e5;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.msg {
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.msg.error {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.msg.success {
+  background: #d1fae5;
+  color: #047857;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.filters select {
+  width: auto;
+  min-width: 150px;
+}
+
+.table-wrap {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+th {
+  background: #f9fafb;
+  color: #6b7280;
+}
+
+.badge {
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.badge.income {
+  background: #d1fae5;
+  color: #047857;
+}
+
+.badge.expense {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.link {
+  background: none;
+  border: none;
+  color: #4f46e5;
+  cursor: pointer;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.link.danger {
+  color: #ef4444;
+}
+
+.green {
+  color: #10b981;
+}
+
+.red {
+  color: #ef4444;
+}
+
+.empty {
+  color: #9ca3af;
+}
+
+@media (max-width: 900px) {
+  .form-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}

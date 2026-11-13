@@ -1,0 +1,196 @@
+.b-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.b-header input {
+  padding: 8px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
+
+.b-panel {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  margin-bottom: 16px;
+}
+
+.b-panel h4 {
+  margin-bottom: 12px;
+}
+
+.b-form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.b-form input,
+.b-form select {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  flex: 1;
+  min-width: 140px;
+  background: #fff;
+}
+
+.b-btn {
+  padding: 9px 18px;
+  border: 1px solid #d1d5db;
+  background: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.b-btn.primary {
+  background: #4f46e5;
+  color: #fff;
+  border-color: #4f46e5;
+}
+
+.b-msg {
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.b-msg.error {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.b-msg.success {
+  background: #d1fae5;
+  color: #047857;
+}
+
+.b-numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.b-numbers small {
+  display: block;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.b-numbers b {
+  font-size: 20px;
+}
+
+.progress {
+  height: 16px;
+  background: #e5e7eb;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.4s;
+}
+
+.progress-bar.safe {
+  background: #10b981;
+}
+
+.progress-bar.warn {
+  background: #f59e0b;
+}
+
+.progress-bar.over {
+  background: #ef4444;
+}
+
+.b-alert {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.b-alert.safe {
+  color: #047857;
+}
+
+.b-alert.warn {
+  color: #b45309;
+}
+
+.b-alert.over {
+  color: #b91c1c;
+}
+
+.cat-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.cat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.tag {
+  font-style: normal;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  margin-left: 6px;
+  text-transform: capitalize;
+}
+
+.tag.expense {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.tag.income {
+  background: #d1fae5;
+  color: #047857;
+}
+
+.link {
+  background: none;
+  border: none;
+  color: #4f46e5;
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.link.danger {
+  color: #ef4444;
+}
+
+.green {
+  color: #10b981;
+}
+
+.red {
+  color: #ef4444;
+}
+
+.empty {
+  color: #9ca3af;
+}
+
+@media (max-width: 520px) {
+  .b-numbers {
+    grid-template-columns: 1fr;
+  }
+}
