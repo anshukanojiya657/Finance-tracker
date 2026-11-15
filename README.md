@@ -153,6 +153,3 @@ Environment variables used in production:
 
 **Anshu**
 GitHub: [@anshukanojiya657](https://github.com/anshukanojiya657)
-
----
-Built with ❤️ for DevCamp 2.0
